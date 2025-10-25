@@ -1,6 +1,6 @@
 @import "theme.css";
 @import "./sections/header.css";
-
+@import "./sections/about-me.css";
 * {
   box-sizing: border-box;
 }
@@ -13,8 +13,26 @@
   font-weight: 400;
   font-size: normal;
 }
+
+a {
+  text-decoration: none;
+}
 .container {
   margin: 0 auto;
   max-width: 1536px;
   padding: 0 2rem;
+}
+
+.aboutMe__title {
+  font-size: var(--h1-font-size);
+  line-height: var(--h1-line-height);
+  font-weight: bold;
+  color: var(--p-950);
+  text-transform: capitalize;
+}
+
+.aboutMe__description {
+  text-align: center;
+  max-width: 65ch;
+  color: var(--n-500);
 }
